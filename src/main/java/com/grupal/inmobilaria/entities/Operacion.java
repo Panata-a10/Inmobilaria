@@ -27,7 +27,8 @@ public class Operacion implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional = false)
 	@Column(name="id_operacion")
-	private int idOperacion;
+	private Integer idOperacion;
+	
 	@Column(name="descripcion")
 	private String descripcion;
 	
@@ -38,16 +39,17 @@ public class Operacion implements Serializable {
 		super();
 	}
 	
-	public Operacion(int id) {
+	public Operacion(Integer id) {
 		super();
 		this.idOperacion =id;
 	}
 
-	public int getIdOperacion() {
+
+	public Integer getIdOperacion() {
 		return idOperacion;
 	}
 
-	public void setIdOperacion(int idOperacion) {
+	public void setIdOperacion(Integer idOperacion) {
 		this.idOperacion = idOperacion;
 	}
 

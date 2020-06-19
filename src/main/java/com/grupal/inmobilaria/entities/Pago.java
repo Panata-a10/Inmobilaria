@@ -26,7 +26,7 @@ public class Pago implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional = false)
 	@Column(name="id_pago")
-	private int idPago;
+	private Integer idPago;
 	
 	@Column(name="descripcion")
 	private String descripcion;
@@ -38,16 +38,18 @@ public class Pago implements Serializable {
 		super();
 	}
 	
-	public Pago(int id) {
+	public Pago(Integer id) {
 		super();
 		this.idPago =id;
 	}
 
-	public int getIdPago() {
+	
+
+	public Integer getIdPago() {
 		return idPago;
 	}
 
-	public void setIdPago(int idPago) {
+	public void setIdPago(Integer idPago) {
 		this.idPago = idPago;
 	}
 

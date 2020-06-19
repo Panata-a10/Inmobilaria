@@ -30,7 +30,7 @@ public class Inmobilaria implements Serializable  {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional = false)
 	@Column(name="id_inmobilaria")
-	private int idInmobilaria;
+	private Integer idInmobilaria;
 	
 	@Column(name="nombre")
 	private String nombre;
@@ -76,16 +76,18 @@ public class Inmobilaria implements Serializable  {
 		super();
 	}
 	
-	public Inmobilaria(int id) {
+	public Inmobilaria(Integer id) {
 		super();
 		this.idInmobilaria =id;
 	}
 
-	public int getIdInmobilaria() {
+	
+
+	public Integer getIdInmobilaria() {
 		return idInmobilaria;
 	}
 
-	public void setIdInmobilaria(int idInmobilaria) {
+	public void setIdInmobilaria(Integer idInmobilaria) {
 		this.idInmobilaria = idInmobilaria;
 	}
 

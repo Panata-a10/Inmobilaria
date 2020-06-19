@@ -25,7 +25,7 @@ public class Movimiento implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional = false)
 	@Column(name="id_movimimento")
-	private int idMovimiento;
+	private Integer idMovimiento;
 	
 	
 	@Column(name="recomendacion")
@@ -48,16 +48,16 @@ public class Movimiento implements Serializable{
 		super();
 	}
 	
-	public Movimiento(int id) {
+	public Movimiento(Integer id) {
 		super();
 		this.idMovimiento =id;
 	}
 
-	public int getIdMovimiento() {
+	public Integer getIdMovimiento() {
 		return idMovimiento;
 	}
 
-	public void setIdMovimiento(int idMovimiento) {
+	public void setIdMovimiento(Integer idMovimiento) {
 		this.idMovimiento = idMovimiento;
 	}
 

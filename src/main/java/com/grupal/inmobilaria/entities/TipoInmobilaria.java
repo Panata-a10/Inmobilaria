@@ -26,7 +26,8 @@ public class TipoInmobilaria implements Serializable  {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional = false)
 	@Column(name="id_tip_inmobilaria")
-	private int idTipInmobilaria;
+	private Integer idTipInmobilaria;
+	
 	@Column(name="descripcion")
 	private String descripcion;
 	
@@ -40,18 +41,18 @@ public class TipoInmobilaria implements Serializable  {
 	}
 	
 	
-	public TipoInmobilaria(int id) {
+	public TipoInmobilaria(Integer id) {
 		super();
 		this.idTipInmobilaria =id;
 	}
 
 
-	public int getIdTipInmobilaria() {
+	public Integer getIdTipInmobilaria() {
 		return idTipInmobilaria;
 	}
 
 
-	public void setIdTipInmobilaria(int idTipInmobilaria) {
+	public void setIdTipInmobilaria(Integer idTipInmobilaria) {
 		this.idTipInmobilaria = idTipInmobilaria;
 	}
 
@@ -74,7 +75,12 @@ public class TipoInmobilaria implements Serializable  {
 	public void setInmobilaria(List<Inmobilaria> inmobilaria) {
 		this.inmobilaria = inmobilaria;
 	}
+
+
+
 	
+
+
 	
 	
 	
